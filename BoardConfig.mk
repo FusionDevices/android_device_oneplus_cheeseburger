@@ -237,6 +237,9 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
 
+# Releasetools extension for shipping firmware
+TARGET_RELEASETOOLS_EXTENSIONS := device/oneplus/cheeseburger
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy

@@ -229,6 +229,8 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := cheeseburger
+TARGET_HIGH_BRIGHTNESS_MODE_NODE := "/sys/devices/virtual/graphics/fb0/hbm"
+POWER_FEATURE_HIGH_BRIGHTNESS_MODE := 50
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab

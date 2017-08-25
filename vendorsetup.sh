@@ -1,0 +1,2 @@
+add_lunch_combo cheeseburger-user
+add_lunch_combo cheeseburger-userdebug

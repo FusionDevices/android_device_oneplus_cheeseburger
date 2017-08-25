@@ -35,8 +35,9 @@ BOARD_VENDOR := oneplus
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := cheeseburger
 
-# Use Snapdragon LLVM, if available
+# Clang
 TARGET_USE_SDCLANG := true
+CLANG_FAST := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8998

@@ -192,11 +192,10 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 # Enable dexpreopt to speed boot time
-ifeq ($(HOST_OS),linux)
-  ifeq ($(call match-word-in-list,$(TARGET_BUILD_VARIANT),user),true)
-    ifeq ($(WITH_DEXPREOPT),)
+ifeq ($(TARGET_BUILD_VARIANT),user)
+  ifeq ($(HOST_OS),linux)
       WITH_DEXPREOPT := true
-    endif
+      WITH_DEXPREOPT_PIC := true
   endif
 endif
 

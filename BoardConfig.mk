@@ -32,7 +32,6 @@ TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 BOARD_VENDOR := oneplus
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := cheeseburger
 
 # Clang
@@ -145,7 +144,7 @@ AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
-#Battery Real Time Stats
+# Battery Real Time Stats
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Bluetooth
@@ -233,10 +232,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
 TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
 BOARD_HAS_LARGE_FILESYSTEM := true
-
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cheeseburger
-TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 
 # RIL
 TARGET_RIL_VARIANT := caf

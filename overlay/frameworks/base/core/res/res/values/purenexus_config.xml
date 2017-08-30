@@ -26,7 +26,7 @@
     <bool name="config_hasDashCharger">true</bool>
 
     <!-- sRGB sysfs path -->
-    <string name="config_srgb_path">/sys/class/graphics/fb0/srgb</string>
+    <string name="config_srgb_path">/sys/devices/virtual/graphics/fb0/SRGB</string>
 
     <!-- Does the notification LED support multiple colors -->
     <bool name="config_multiColorNotificationLed">true</bool>

@@ -32,7 +32,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 BOARD_VENDOR := oneplus
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := cheeseburger
+TARGET_OTA_ASSERT_DEVICE := cheeseburger,oneplus5,OnePlus5,A5000
 
 # Clang
 TARGET_USE_SDCLANG := true

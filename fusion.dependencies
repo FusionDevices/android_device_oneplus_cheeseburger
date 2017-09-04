@@ -3,7 +3,7 @@
     "remote"      : "FusionDevices",
     "repository"  : "FusionDevices/android_device_oppo_common",
     "target_path" : "device/oppo/common",
-    "revision"    : "n-mr2"
+    "revision"    : "n-mr2-OP5"
   },
   {
     "remote"      : "FusionDevices",

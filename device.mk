@@ -260,8 +260,7 @@ PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery \
-    GoogleCamera \
-    SnapdragonCamera
+    GoogleCamera
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuild/lib/libfilter-sdk.so:system/lib/libfilter-sdk.so \

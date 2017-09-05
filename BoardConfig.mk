@@ -188,6 +188,9 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
+# D2TW
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+
 # Enable dexpreopt to speed boot time
 ifeq ($(TARGET_BUILD_VARIANT),user)
   ifeq ($(HOST_OS),linux)
@@ -223,9 +226,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 32212254720
 BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
-
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := cheeseburger
